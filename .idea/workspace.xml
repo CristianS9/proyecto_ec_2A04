@@ -9,7 +9,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e9568a9-56d6-4405-8d44-f2000cc84e47" name="Default Changelist" comment="" />
+    <list default="true" id="9e9568a9-56d6-4405-8d44-f2000cc84e47" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/main.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +22,11 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZcV1K2mIJyvKgsVhnEy5pt6j5J" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,6 +34,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../proyecto_iker" />
   </component>
@@ -50,6 +59,7 @@
       <workItem from="1585217914962" duration="6133000" />
       <workItem from="1585639092002" duration="1032000" />
       <workItem from="1585675483123" duration="452000" />
+      <workItem from="1586451222974" duration="160000" />
     </task>
     <servers />
   </component>
@@ -61,9 +71,9 @@
       <screen x="67" y="27" width="1851" height="901" />
     </state>
     <state x="775" y="234" width="424" height="484" key="FileChooserDialogImpl/67.27.1851.901@67.27.1851.901" timestamp="1585219497128" />
-    <state x="648" y="305" key="com.intellij.ide.util.TipDialog" timestamp="1585675523988">
+    <state x="648" y="305" key="com.intellij.ide.util.TipDialog" timestamp="1586451223316">
       <screen x="67" y="27" width="1851" height="901" />
     </state>
-    <state x="648" y="305" key="com.intellij.ide.util.TipDialog/67.27.1851.901@67.27.1851.901" timestamp="1585675523988" />
+    <state x="648" y="305" key="com.intellij.ide.util.TipDialog/67.27.1851.901@67.27.1851.901" timestamp="1586451223316" />
   </component>
 </project>

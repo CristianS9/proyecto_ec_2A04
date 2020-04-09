@@ -1,5 +1,4 @@
-rutserv.o: \
- /home/cristian/estructura_computadores/proyecto/proyecto_2A04/source/rutserv.c \
+rutserv.o: /home/iker/Downloads/2A04/source/rutserv.c \
  /opt/devkitpro/libnds/include/nds.h \
  /opt/devkitpro/libnds/include/nds/libversion.h \
  /opt/devkitpro/libnds/include/nds/ndstypes.h \
@@ -60,9 +59,9 @@ rutserv.o: \
  /opt/devkitpro/libnds/include/nds/arm9/video.h \
  /opt/devkitpro/libnds/include/nds/arm9/videoGL.h \
  /opt/devkitpro/libnds/include/nds/arm9/nand.h \
- /home/cristian/estructura_computadores/proyecto/proyecto_2A04/include/teclado.h \
- /home/cristian/estructura_computadores/proyecto/proyecto_2A04/include/defines.h \
- /home/cristian/estructura_computadores/proyecto/proyecto_2A04/include/temporizadores.h
+ /home/iker/Downloads/2A04/include/teclado.h \
+ /home/iker/Downloads/2A04/include/defines.h \
+ /home/iker/Downloads/2A04/include/temporizadores.h
 
 /opt/devkitpro/libnds/include/nds.h:
 
@@ -184,8 +183,8 @@ rutserv.o: \
 
 /opt/devkitpro/libnds/include/nds/arm9/nand.h:
 
-/home/cristian/estructura_computadores/proyecto/proyecto_2A04/include/teclado.h:
+/home/iker/Downloads/2A04/include/teclado.h:
 
-/home/cristian/estructura_computadores/proyecto/proyecto_2A04/include/defines.h:
+/home/iker/Downloads/2A04/include/defines.h:
 
-/home/cristian/estructura_computadores/proyecto/proyecto_2A04/include/temporizadores.h:
+/home/iker/Downloads/2A04/include/temporizadores.h:

@@ -12,21 +12,23 @@ dovoto y otro de Jaeden Amero
 #include "fondos.h"
 #include "sprites.h"
 #include "defines.h"
-#include "rutservs.h"
+#include "rutserv.h"
 #include "teclado.h"
 #include "temporizadores.h"
-#include "tactil.h"
 
 //-----------------------------------------------------
 // Variables globales
 //-----------------------------------------------------
 
+int seg=0;
+int tseg=0;
 int estado;
 int easteregg;
 int CRISTIAN APRENDE A ESCRIBIR MAS RAPIDO;
 
 
 int main() {
+	
 
 	// Variables del main
 	touchPosition pos_pantalla;
@@ -41,7 +43,7 @@ int main() {
     	initFondos();
 
     	// Mostrar fondos en pantalla. 
-    	MostrarPuerta();
+   // 	MostrarPuerta();
 
 	// Inicializar memoria de sprites y guardar en ella los sprites 
 	initSpriteMem();
@@ -57,8 +59,8 @@ int main() {
 	// en este caso time(NULL). 
 	// srand() sólo se suele activar una vez por ejecución y no devuelve ningún valor 
 	srand (time(NULL));
-
-    
+	
+//	int tecla;  
     
 // ...
 	MostrarRombo(1,8,8);
@@ -67,13 +69,7 @@ int main() {
 // teclas y acciones
 
     while(1){
-        if( TeclaPulsada()== 2 ){
-            MostrarPuerta();
-        }
-
-        if(tactilPulsado()){
-            MostrarPuertaAbierta();
-        }
+      
 		
 	}
 } 
