@@ -24,7 +24,7 @@ dovoto y otro de Jaeden Amero
 int estado;
 
 
-
+int nuevo;
 int main() {
 
 	// Variables del main
