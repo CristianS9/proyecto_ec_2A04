@@ -1,5 +1,5 @@
-/*------------------------------------
-rutserv.c
+﻿/*-------------------------------------
+ rutserv.c
 -------------------------------------*/
 // Añadir los includes que sean necesarios
 #include <nds.h>
@@ -13,11 +13,11 @@ rutserv.c
 // Además es aquí donde se configuran los registros de control de los periféricos.
 
 void HabilitarInterrupciones() { // En el Controlador de Interrupciones
-
+	IME=0;
   // Primero se inhiben todas las interrupciones
-  
+	IE=0x1008;
   // Escribir un 1 en el bit correspondiente 
-   
+   	IME=1;
   // Se vuelven a habilitar todas las interrupciones    
  
 }
@@ -26,8 +26,8 @@ void HabilitarInterrupciones() { // En el Controlador de Interrupciones
 void ProgramarRegistrosControl() { 
 
   // Registro de Control del Teclado
-  
-  // TIMER0_CNT   
+  TECLAS_CNT=0x4009;
+  TIMER0_CNT=0x00C1;  
   //   El temporizador se activa poniendo un 1 en el 7º bit.
   //   El temporizador interrumpirá al desbordarse el contador, 
   //      si hay un 1 en el 6º bit.
@@ -37,7 +37,7 @@ void ProgramarRegistrosControl() {
   //      10 frecuencia 33554432/256 hz
   //      11 frecuencia 33554432/1024 hz
     
-  // TIMER0_DAT 
+  TIMER0_DAT =56798;//60 ticks por seg
   //   Indica a partir de qué valor tiene que empezar a contar (latch)
    
 }
@@ -45,19 +45,19 @@ void ProgramarRegistrosControl() {
 void DefinirVectorInterrupciones() { // Rutinas de atención
 
   // Rutina de Atención al Teclado
-    
+    irqSet(IRQ_KEYS, IntTec);
   // Rutinas de Atención a los Temporizadores
-  	
+    irqSet(IRQ_TIMER0, IntTemp);
 }
 
 void InhibirInterrupciones() { // En el Controlador de Interrupciones
 
   // Primero se inhiben todas las interrupciones
-    
+        IME=0;
   // Escribir un 0 en el bit correspondiente 
-    
+	IE=0x0000;
   // Se vuelven a habilitar todas las interrupciones
-  	
+  	IME=1;
 }
 
 

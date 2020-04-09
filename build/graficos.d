@@ -1,5 +1,4 @@
-graficos.o: \
- /home/cristian/estructura_computadores/proyecto/proyecto_2A04/source/graficos.c \
+graficos.o: /home/iker/Downloads/2A04/source/graficos.c \
  /opt/devkitpro/libnds/include/nds.h \
  /opt/devkitpro/libnds/include/nds/libversion.h \
  /opt/devkitpro/libnds/include/nds/ndstypes.h \

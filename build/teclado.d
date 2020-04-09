@@ -1,5 +1,4 @@
-teclado.o: \
- /home/cristian/estructura_computadores/proyecto/proyecto_2A04/source/teclado.c \
+teclado.o: /home/iker/Downloads/2A04/source/teclado.c \
  /opt/devkitpro/libnds/include/nds.h \
  /opt/devkitpro/libnds/include/nds/libversion.h \
  /opt/devkitpro/libnds/include/nds/ndstypes.h \
@@ -60,8 +59,9 @@ teclado.o: \
  /opt/devkitpro/libnds/include/nds/arm9/video.h \
  /opt/devkitpro/libnds/include/nds/arm9/videoGL.h \
  /opt/devkitpro/libnds/include/nds/arm9/nand.h \
- /home/cristian/estructura_computadores/proyecto/proyecto_2A04/include/defines.h \
- /home/cristian/estructura_computadores/proyecto/proyecto_2A04/include/sprites.h
+ /home/iker/Downloads/2A04/include/defines.h \
+ /home/iker/Downloads/2A04/include/sprites.h \
+ /home/iker/Downloads/2A04/include/fondos.h
 
 /opt/devkitpro/libnds/include/nds.h:
 
@@ -183,6 +183,8 @@ teclado.o: \
 
 /opt/devkitpro/libnds/include/nds/arm9/nand.h:
 
-/home/cristian/estructura_computadores/proyecto/proyecto_2A04/include/defines.h:
+/home/iker/Downloads/2A04/include/defines.h:
 
-/home/cristian/estructura_computadores/proyecto/proyecto_2A04/include/sprites.h:
+/home/iker/Downloads/2A04/include/sprites.h:
+
+/home/iker/Downloads/2A04/include/fondos.h:

@@ -12,20 +12,23 @@ dovoto y otro de Jaeden Amero
 #include "fondos.h"
 #include "sprites.h"
 #include "defines.h"
-#include "rutservs.h"
+#include "rutserv.h"
 #include "teclado.h"
 #include "temporizadores.h"
-#include "tactil.h"
 
 //-----------------------------------------------------
 // Variables globales
 //-----------------------------------------------------
 
+int seg=0;
+int tseg=0;
 int estado;
-
+int TactilTocada();//no esta en defines aun
+//extern int segs;
 
 
 int main() {
+	
 
 	// Variables del main
 	touchPosition pos_pantalla;
@@ -40,7 +43,7 @@ int main() {
     	initFondos();
 
     	// Mostrar fondos en pantalla. 
-    	MostrarPuerta();
+   // 	MostrarPuerta();
 
 	// Inicializar memoria de sprites y guardar en ella los sprites 
 	initSpriteMem();
@@ -56,24 +59,68 @@ int main() {
 	// en este caso time(NULL). 
 	// srand() sólo se suele activar una vez por ejecución y no devuelve ningún valor 
 	srand (time(NULL));
-
-    
+	
+//	int tecla;  
     
 // ...
 	MostrarRombo(1,8,8);
+//	MostrarPuertaAbierta();
+	
+	interrupciones();
+	
+	
+	estado=ESPERA;
+	while(1)
+	{	
+		if(estado==ESPERA){
+			switch(TeclaPulsada()){
+				case A:
+					iprintf("\x1b[04;00H                A               ");	
+					break;	
+				case B:
+					iprintf("\x1b[04;00H                B               ");	
+					break;	
+				case SELECT:
+					iprintf("\x1b[04;00H              SELECT            ");	
+					break;	
+//				case START:
+//					iprintf("\x1b[04;00H                                ");	
+//					MostrarPuerta();
+//					estado=CERRADA;
+//					//segs=0;
+//					break;	
+				case DCHA:
+					iprintf("\x1b[04;00H               DCHA             ");	
+					break;	
+				case IZDA:
+					iprintf("\x1b[04;00H               IZDA             ");	
+					break;	
+				case ARRIBA:
+					iprintf("\x1b[04;00H              ARRIBA            ");	
+					break;	
+				case ABAJO:
+					iprintf("\x1b[04;00H               ABAJO            ");	
+					break;	
+				case L:
+					iprintf("\x1b[04;00H                 L              ");
+					break;	
+				case R:
+					iprintf("\x1b[04;00H                 R              ");
+					break;	
+				default:
+					break;
+			}
 
-
-// teclas y acciones
-
-    while(1){
-        if( TeclaPulsada()== 2 ){
-            MostrarPuerta();
-        }
-
-        if(tactilPulsado()){
-            MostrarPuertaAbierta();
-        }
+		}
 	}
 } 
-
+TactilTocada(){
+	int r=0;
+	touchPosition p_pan;
+	touchRead(&p_pan);
+	if(p_pan.px!=0 || p_pan.py!=0){
+		r=1;	
+	}
+	return r;
+}
 

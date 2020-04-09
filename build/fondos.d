@@ -1,5 +1,4 @@
-fondos.o: \
- /home/cristian/estructura_computadores/proyecto/proyecto_2A04/source/fondos.c \
+fondos.o: /home/iker/Downloads/2A04/source/fondos.c \
  /opt/devkitpro/libnds/include/nds.h \
  /opt/devkitpro/libnds/include/nds/libversion.h \
  /opt/devkitpro/libnds/include/nds/ndstypes.h \
@@ -60,9 +59,9 @@ fondos.o: \
  /opt/devkitpro/libnds/include/nds/arm9/video.h \
  /opt/devkitpro/libnds/include/nds/arm9/videoGL.h \
  /opt/devkitpro/libnds/include/nds/arm9/nand.h \
- /home/cristian/estructura_computadores/proyecto/proyecto_2A04/include/fondos.h \
- /home/cristian/estructura_computadores/proyecto/proyecto_2A04/build/Puerta.h \
- /home/cristian/estructura_computadores/proyecto/proyecto_2A04/build/PuertaAbierta.h
+ /home/iker/Downloads/2A04/include/fondos.h \
+ /home/iker/Downloads/2A04/build/Puerta.h \
+ /home/iker/Downloads/2A04/build/PuertaAbierta.h
 
 /opt/devkitpro/libnds/include/nds.h:
 
@@ -184,8 +183,8 @@ fondos.o: \
 
 /opt/devkitpro/libnds/include/nds/arm9/nand.h:
 
-/home/cristian/estructura_computadores/proyecto/proyecto_2A04/include/fondos.h:
+/home/iker/Downloads/2A04/include/fondos.h:
 
-/home/cristian/estructura_computadores/proyecto/proyecto_2A04/build/Puerta.h:
+/home/iker/Downloads/2A04/build/Puerta.h:
 
-/home/cristian/estructura_computadores/proyecto/proyecto_2A04/build/PuertaAbierta.h:
+/home/iker/Downloads/2A04/build/PuertaAbierta.h:

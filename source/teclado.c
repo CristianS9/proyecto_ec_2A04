@@ -7,57 +7,58 @@
 #include <stdio.h>
 #include "defines.h"
 #include "sprites.h"
+#include "fondos.h"
 
-
+extern int estado;
 // Esta funcion tiene que devolver el valor de la tecla pulsada
 int  TeclaPulsada() {
+	if((TECLAS_DAT & 0X0001)==0){
+		 return A;
+    	}else if((TECLAS_DAT & 0X0002)==0){
+		 return B;
+   	}else if((TECLAS_DAT & 0X0004)==0){	
+		 return SELECT;
+    	}else if((TECLAS_DAT & 0X0008)==0){
+		 return START;
+    	}else if((TECLAS_DAT & 0X0010)==0){
+		 return DCHA;
+    	}else if((TECLAS_DAT & 0X0020)==0){
+		 return IZDA;
+    	}else if((TECLAS_DAT & 0X0040)==0){
+		 return ARRIBA;
+    	}else if((TECLAS_DAT & 0X0080)==0){
+		 return ABAJO;
+    	}else if((TECLAS_DAT & 0X0100)==0){
+		 return R;
+    	}else if((TECLAS_DAT & 0X0200)==0){
+		 return L;
+	}else{
+		 return -1;
+	}
+	
    // Devuelve el valor asociado a la tecla pulsada: 
    // A=0; B=1; Select=2; Start=3; Der=4; Izq=5;
    // Arriba=6; Abajo=7; R=8; L=9;
    // -1 en otros casos
 
-    int res;
-    int dato = TECLAS_DAT;
-    switch (dato){
-        case 0x3fe:
-            res = 0;
-            break;
-        case 0x3fd:
-            res = 1;
-            break;
-        case 0x3fb:
-            res = 2;
-            break;
-        case 0x3f7:
-            res = 3;
-            break;
-        case 0x3ef:
-            res = 4;
-            break;
-        case 0x3df:
-            res = 5;
-            break;
-        case 0x3bf:
-            res = 6;
-            break;
-        case 0x37f:
-            res = 7;
-            break;
-        case 0x2ff:
-            res = 8;
-            break;
-        case 0x1ff:
-            res = 9;
-            break;
-        default:
-            res = -1;
-    }
-    return res;
 }
 
 
 // Rutina de atencion a la interrupcion del teclado
 void IntTec() {
+	if(estado==CERRADA && TeclaPulsada()==A){
+		iprintf("\x1b[04;00H                                ");
+		MostrarPuertaAbierta();		
+		tseg=0;
+		estado=ABIERTA;			
+		
+	}else if(estado==ESPERA && TeclaPulsada()==START){
+		iprintf("\x1b[04;00H                                ");
+		MostrarPuerta();
+		seg=0;
+		estado=CERRADA;
+	}
+		
 }
 
 
