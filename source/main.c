@@ -105,7 +105,7 @@ int main() {
 					iprintf("\x1b[04;00H                 L              ");
 					break;	
 				case R:
-					iprintf("\x1b[04;00H                 RRR              ");
+					iprintf("\x1b[04;00H                 R              ");
 					break;	
 				default:
 					break;
