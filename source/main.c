@@ -23,6 +23,7 @@ dovoto y otro de Jaeden Amero
 
 int estado;
 int easteregg;
+int CRISTIAN APRENDE A ESCRIBIR MAS RAPIDO;
 
 
 int main() {
