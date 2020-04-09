@@ -15,7 +15,7 @@
 void HabilitarInterrupciones() { // En el Controlador de Interrupciones
 	IME=0;
   // Primero se inhiben todas las interrupciones
-	IE=0x1008;
+	IE=IE | 1008;
   // Escribir un 1 en el bit correspondiente 
    	IME=1;
   // Se vuelven a habilitar todas las interrupciones    
@@ -55,7 +55,7 @@ void InhibirInterrupciones() { // En el Controlador de Interrupciones
   // Primero se inhiben todas las interrupciones
         IME=0;
   // Escribir un 0 en el bit correspondiente 
-	IE=0x0000;
+	IE=IE & 0xFFFFEFF7;
   // Se vuelven a habilitar todas las interrupciones
   	IME=1;
 }
