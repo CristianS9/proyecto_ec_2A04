@@ -22,7 +22,8 @@ dovoto y otro de Jaeden Amero
 //-----------------------------------------------------
 
 int estado;
-int easteregg;
+int error;
+
 
 int nuevo;
 int main() {
