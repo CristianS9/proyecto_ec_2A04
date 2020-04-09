@@ -22,7 +22,7 @@ dovoto y otro de Jaeden Amero
 //-----------------------------------------------------
 
 int estado;
-
+int error;
 
 int nuevo;
 int main() {
