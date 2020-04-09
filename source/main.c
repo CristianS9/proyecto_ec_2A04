@@ -22,7 +22,7 @@ dovoto y otro de Jaeden Amero
 //-----------------------------------------------------
 
 int estado;
-
+int easteregg;
 
 
 int main() {
@@ -73,6 +73,7 @@ int main() {
         if(tactilPulsado()){
             MostrarPuertaAbierta();
         }
+		
 	}
 } 
 

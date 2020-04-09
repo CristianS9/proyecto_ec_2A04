@@ -47,6 +47,7 @@ defines.h
 
 // Asignar un nombre a cada estado
 #define INICIO	0
+#define EASTEREGG 1
 //...
 
 
